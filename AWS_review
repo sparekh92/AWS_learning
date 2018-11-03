@@ -1,0 +1,39 @@
+1. Edureka link for final review before taking exam  -- https://www.youtube.com/watch?v=d9siPwxzEVI
+
+2. After VPC creation received following mail..
+
+*********************
+ear Amazon EC2 Customer,
+
+Thank you for activating the Virtual Private Cloud (VPC) service for your Amazon Web Services account. Here are a few useful resources to help you familiarize yourself with VPC:
+
+Getting started with VPC: http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/GetStarted.html
+
+Common VPC scenarios and configurations: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenarios.html
+
+Understanding default VPCs and subnets: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html
+
+VPC default service limits: http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_vpc
+
+Security groups: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html
+
+Network ACLs: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html
+
+Route Tables: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html
+
+
+AWS Knowledge Center videos:
+
+Creating a VPC: https://aws.amazon.com/premiumsupport/knowledge-center/create-vpc-console/
+
+Creating a NAT Gateway: https://aws.amazon.com/premiumsupport/knowledge-center/nat-gateway-vpc-private-subnet/
+
+Connecting to a VPC: https://aws.amazon.com/premiumsupport/knowledge-center/connect-vpc/
+
+If you have any questions, you can reach out to us on the AWS EC2 forums: https://forums.aws.amazon.com/forum.jspa?forumID=30
+
+If you have a Developer or Business Support plan, you can open a technical support case for help with your VPC: https://console.aws.amazon.com/support/home?#/case/create
+
+Regards,
+Amazon Web Services
+^^^^^^^^^^^^^^^^
