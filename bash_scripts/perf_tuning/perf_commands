@@ -1,0 +1,45 @@
+1.  sudo perf record find / -xdev -name ls
+    sudo perf report
+2. pcp  -- performance co-pilot 
+
+	Install pkgs  pcp, pcp-gui pcp-webjs pcp-webapi pcp-doc ...
+
+	PCP collectors: collect performance data, often on remote systems
+	PCP monitors: display the data collected
+		A toolkit designed for monitoring and managed system level performance
+
+
+	Start Daemon and enable using command..
+
+	sudo systemctl enable pmcd pmlogger
+	sudo systemctl start pmcd pmlogger
+
+	PCP extensions -- PMDAs (Performnce Metrics Domain Agents)
+		This pkg includes  apache, kvm, memcache, mysql, proc, systemd
+
+	Eg: yum install pcp-pmda-systemd
+		cd /var/lib/pcp/pmdas/systemd
+
+2. TUNA -- tools help change attributes of application and kernel threads
+		Schedule policy or priority
+
+3. pminfo
+	  pminfo | more
+  pminfo -T mem.util.dirty
+  pminfo -d mem.util.dirty
+  pminfo -f mem.util.dirty
+
+4. pmchart
+	GUI tools -- select CPU, Disk etc.. from list
+
+5. SystemTap 
+	Command to run SystemTap scripts: stap
+	Scripts interact with the kernel to "Gather information about your system"  and "change configuration"
+
+	Examples at /usr/share/systemtap/examples
+ 
+6, BPH (Berkeley Packet Filter)  -- similar to systemtap. 
+	BPF is a language with an interpreter inside the Linux kernel used as a convienient way of getting system information or changing the kernel behvior
+	Still in development and may be available with new distro
+	GITHUB location
+	git clone https://github.com/iovisor/bcc.git

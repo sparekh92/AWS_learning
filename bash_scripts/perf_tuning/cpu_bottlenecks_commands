@@ -1,0 +1,40 @@
+1. top
+	press "H"  and display will change
+
+2. sar  (system activity report)
+	CPU utilization
+
+	sar with daemon
+
+	sar -P 1  (CPU 1 report)
+
+	sar -q 5 4 ( Queue with 5 min interval for 4 times)
+
+	sar -u ALL 5 2 (Utilization... for all)
+
+3. more /proc/cpuinfo
+	grep processor /proc/cpuinfo
+
+4. lshw
+All time of information
+
+	rpm -qf $(which lshw)
+
+B: Scheduling -- nice, priorities and process classes
+
+	nice -- A weight not truly a priority
+		Threads that are more nice, get less CPU time over a sufficient long interbal
+		Range from -20 to +19  --> -20 is most mean
+		Weight factor ranges over the 40 values is about 5900  (Range is from 48388.. 286331153)
+
+_
+	time nice --20 program --> Give highest priority
+
+	time nice -2 program --> Better than standard is 0
+
+	time nice -5 program --> better than above
+
+C.   hackbench -l 10000
+
+  	sudo cyclictest -a -t -n -p99
+

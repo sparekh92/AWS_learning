@@ -1,0 +1,11 @@
+	Two pkgs type
+		RPM and Debian packages are most common
+		Name of pkgs mostly same
+		"apt-get"  and "dpkg"  for Debian (like Ubuntu)
+		"yum" and "rpm" with RPM packages (like Redhat)
+
+	Performance related pkgs are
+		gnome-system-monitor
+		sysstat   -->  cifsiostat, iostat, mpstat, nfsiostat-sysstat, pidstat, sar (system activity report)
+		procps-ng	 
+			--> free, pmap, ps, slabtop, snice, top, uptime, vmstat, watch, tload	

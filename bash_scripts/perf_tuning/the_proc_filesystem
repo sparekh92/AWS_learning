@@ -1,0 +1,38 @@
+1. PROC is "pseudo" file system
+
+	PROC files provides kernel info
+
+	The length reported by ls may be zero it's a pseudo filesystem
+
+	>2000 proc files 
+		Eg: /proc/1234 would be information about process with PID 1234
+		Inside Process Proc files  
+			limits (ulimit will read data from here) and numa_maps
+			Also provides "stat --> general status info" 
+			statm --> Process memory status info
+			status	--> Similar to ps info
+				Eg:  FOr "bash" prompt
+					echo $$
+					cd /proc/$$
+					cat stat
+					more ststm
+					more status  --> Humon readable format
+
+	PROC files under /proc/sys represent kernel variables
+		Some are RW, some R and some W
+	
+	The proc filesystems needs to be mounted
+		This happens automatically at boot time
+		mount -t proc proc /proc
+        PROC files/directries have permission modes like other files and directories --> some files are writables by root
+
+	Commmand to change parameters are "sysctl"
+	sysctl -a   --> to list all availale parameter
+
+	/etc/sysctl.conf   or  /etc/sysctl.d   --> System config files  for permanent change
+
+	Several subdirectoris under /proc/sys
+		> abi, debug, dev, fs, fscache, kernel, net, sunrpc, vm
+
+
+

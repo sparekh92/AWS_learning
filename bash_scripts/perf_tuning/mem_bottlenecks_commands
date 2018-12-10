@@ -1,0 +1,4 @@
+1. Memory leak
+	Program may not release "Dynamically allocated memory"
+
+	Some program is having "garbage collection" which cleans memory once program complete
